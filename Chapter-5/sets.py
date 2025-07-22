@@ -1,0 +1,10 @@
+s = {1,4,6,4,5}
+a = set()
+print(type(a))
+s.add(56)
+print(s)
+print(len(s))
+s.remove(1)
+print(s)
+s.clear()
+print(s)
