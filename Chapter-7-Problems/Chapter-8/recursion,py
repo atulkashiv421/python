@@ -1,0 +1,18 @@
+# #recursion
+
+def factorial(n):
+    
+     if(n==1 or n==0):
+      return 1
+     return n*factorial(n-1)
+a = int(input("Enter the number: "))
+print(f"The factorial of this number is {factorial(a)}")
+
+ #print n natural number
+def natural(n):
+    if(n == 0):
+       return 0
+    return n + natural(n-1)
+a = int(input("Enter the natural number for sum: "))
+print(f"The sum is: {natural(a)}")
+
