@@ -1,8 +1,16 @@
+
 class unknown:
     
-    @staticmethod
-    def person():
-        print("My name is atul")
+    @property
+    def person(self):
+        return f"{self.fname} {self.lname}"
+    @person.setter
+    def person(self,value):
+        self.fname=value.split(" ")[0]
+        self.lname=value.split(" ")[1]
+e = unknown()
+e.person = "Atul kashiv"
+print(e.person)
 
-unknown.person()
+
      
